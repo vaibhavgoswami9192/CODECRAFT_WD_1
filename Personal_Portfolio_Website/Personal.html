@@ -3,194 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unnatti - Web Developer Portfolio</title>
+    <title>Vaibhav - Web Developer Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Styling */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: background-color 0.5s, color 0.5s;
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 
-        .light-mode {
-            background-color: #fefefe;
-            color: #333;
-        }
-
-        .dark-mode {
-            background-color: #1c1c1c;
-            color: #f5f5f5;
-        }
-
-        /* Navigation */
-        nav {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #2d2d2d;
-            padding: 0.5em 2em;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-
-        nav .theme-toggle {
-            font-size: 1rem;
-            background: #ffcc00;
-            border: none;
-            color: black;
-            padding: 0.5em 1em;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        nav .theme-toggle:hover {
-            background: #ffd633;
-        }
-
-        /* Header Section */
-        header {
-            background: linear-gradient(135deg, #4e54c8, #8f94fb);
-            color: white;
-            padding: 3em 1em;
-            text-align: center;
-        }
-
-        header .highlight {
-            color: #ffcc00;
-            font-weight: bold;
-        }
-
-        /* Main Content */
-        .section {
-            padding: 3em 1em;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 1em;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #ffcc00;
-            margin: 0.5em auto;
-        }
-
-        /* Portfolio Section */
-        #portfolio ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1em;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #portfolio ul li {
-            background: #2d2d2d;
-            color: white;
-            padding: 1em;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        #portfolio ul li:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s;
-        }
-
-        /* Contact Form */
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-            background: #f5f5f5;
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        form label {
-            display: block;
-            margin: 1em 0 0.5em;
-            font-weight: bold;
-        }
-
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 0.8em;
-            margin-bottom: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        form button {
-            background: #4e54c8;
-            color: white;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background: #8f94fb;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background: #2d2d2d;
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        footer p a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer p a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body class="light-mode">
     <nav>
@@ -201,6 +18,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</button>
+
     </nav>
     <header>
         <div class="container">
@@ -245,6 +63,15 @@
                 <li><strong>E-commerce Bag Shop</strong> - An online store for bags.</li>
             </ul>
         </section>
+        <section id="slider" class="section">
+            <h2>Testimonials</h2>
+            <div class="slider-container">
+                <div class="slide">"Vaibhav was instrumental in delivering our project on time!" - Client A</div>
+                <div class="slide">"A true professional with excellent skills." - Client B</div>
+                <div class="slide">"Creative and reliable, highly recommended!" - Client C</div>
+            </div>
+        </section>
+        
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p>Feel free to reach out for collaborations or just to say hi!</p>
@@ -262,19 +89,6 @@
     <footer>
         <p>&copy; 2024 Vaibhav | <a href="#about">Web Developer Portfolio</a></p>
     </footer>
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
 
-        themeToggle.addEventListener('click', () => {
-            if (body.classList.contains('light-mode')) {
-                body.classList.replace('light-mode', 'dark-mode');
-                themeToggle.textContent = '☀️ Switch Mode';
-            } else {
-                body.classList.replace('dark-mode', 'light-mode');
-                themeToggle.textContent = '🌙 Switch Mode';
-            }
-        });
-    </script>
 </body>
 </html>
